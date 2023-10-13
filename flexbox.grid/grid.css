@@ -1,0 +1,46 @@
+* {
+    font-weight: 400px;
+}
+
+
+.padre {
+    background-color: #87A2FB;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-template-areas: "pepe.." "elemento2 elemento3  elemento4";
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.alinear {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+}
+
+.hijos {
+    background-color: purple;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+.elemento1 {
+    background-color: yellow;
+    /* grid-column: 1/4; */
+    grid-area: pepe;
+
+}
+
+.elemento2 {
+    grid-area: elemento2;
+}
+
+.elemento3 {
+    grid-area: elemento3;
+}
+
+.elemento4 {
+    grid-area: elemento4;
+}
